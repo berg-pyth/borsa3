@@ -331,7 +331,7 @@ if run_button:
                                     'Capitale Finale (€)': round(metrics['Capitale Finale (€)'], 2),
                                     'Profitto/Perdita Totale netto (€)': round(metrics['Profitto/Perdita Totale (€)'], 2),
                                     'Profitto/Perdita Totale netto (%)': round(metrics['Profitto/Perdita Totale (%)'], 2),
-                                    'Giorni Totali': metrics['Giorni Totali'],
+                                    'Giorni Totali': metrics.get('Giorni Totali', 0),
                                     'Rendimento Medio Annuale (%)': round(metrics['Rendimento Medio Annuale (%)'], 2),
                                     'Spese di Commissione Totali (€)': round(total_commission, 2),
                                     'Numero Totale di Trade': metrics['Numero Totale di Trade'],
